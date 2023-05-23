@@ -1,0 +1,29 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5">We provide multiple choices <br/>  in the professional service market.</h1>
+        <a routerLink="menu">Contact <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<div class="container mt-5 mb-5">
+
+    <h1 class="text-center">About</h1>
+
+    <p>
+        To capture and maintain its position as a leader, to provide financial services par excellence, to create and sustain its clients amongst the top global players in their respective industries, to make significant contributions towards making Pakistan one of the developed countries of the world, while fulfilling its social responsibilities and environmental obligations and to meet & exceed clients expectations by understanding & fulfilling their requirements through Efficient Team, Quality Services, Timely Delivery, Cost Effective Solutions, Value Additions and Innovate Practices, One Stop Solution for all Requirements, Professional and Personalized Services, use of Latest Technology and Latest Infrastructure.
+        <br/>
+
+    </p>
+     <!-- servicesDetails  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Our <span class="highlight">TEAM</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let fd of aboutDetails;index as i">
+            <div class="servicesDetails" *ngIf="i<=3">
+                <img src="{{fd.Img}}" />
+                <h1>{{fd.name}}</h1>
+                <p>{{fd.Details}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

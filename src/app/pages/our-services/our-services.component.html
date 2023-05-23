@@ -1,0 +1,17 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let fd of servicesDetails">
+
+            <div class="servicesDetails mt-3 mb-3">
+                <img src="{{fd.serviceImg}}">
+                <h1>{{fd.serviceName}}</h1>
+                <p>{{fd.serviceDetails}}</p>
+                <p>{{fd.serviceCharges | currency:'INR'}}</p>
+                <br/>
+                <a class="buybtn" [routerLink]="['/services',fd.id]">Get Service &nbsp;<i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
